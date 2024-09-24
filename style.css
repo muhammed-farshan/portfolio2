@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inria Sans", system-ui;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img {
+    width:10%;
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listiteams {
+    display: inline;
+    padding: 60px;
+    margin-right: 10px;
+}
+.list {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+}
+.list:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.homecontent {
+    margin: 20% 0px 0px 4%;
+}
+
+#uname {
+    margin-bottom: 5px;
+    font-size:85px;
+    font-family: "Dancing Script", system-ui;
+}
+#lname {
+    font-family: "Dancing Script", system-ui;
+    color: brown;
+
+}
+#userdetails{
+    line-height: 1.8;
+    font-size: 35px;
+}
+#download{
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 35px;
+}
+.homeimage{
+    width:25% ;
+    height: 60%;
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.homeimage:hover #shape{
+    bottom: 70px;
+}
+.homeimage:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 20% 8% 0px 8%;
+
+}
+.sectionhead{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.mainhead{
+    font-weight: 600;
+    font-size: 55px;
+}
+.subhead{
+    margin-top: 5px;
+    font-family: "Sofadi One", system-ui;
+    font-size: 40px;
+    color: green;
+}
+.aboutbody{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 40px;
+    align-items: center;
+}
+.img1{
+    width: 80%;
+    padding-right: 30px;
+}
+.aboutcontent{
+    font-size: 40px;
+    text-align: justify;
+}
+.information{
+    margin-top: 2rem;
+}
+.infobox{
+    margin-bottom: 10px;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+.myskills{
+    width: 100%;
+    margin-top: 45px;
+}
+#skill{
+    margin: 20% 8% 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 5rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding:3rem 0px ;
+}
+.barhead, .barpercentage{
+    font: weight 700px;
+    font-size: 3rem;
+}
+.basebar{
+    width: 100%;
+    height: .8rem;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 86%;
+}
+.cssbar{
+    background-color: orange;
+    width: 66%;
+}
+.jsbar{
+    background-color: orange;
+    width: 70%;
+}
+.reactbar{
+    background-color: orange;
+    width: 92%;
+}
+#contact{
+    margin: 20% 8% 0px 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.brands{
+    font-size: 2rem;
+    color: black;
+}
+.icons:hover{
+    background-image: linear-gradient(to top left,rgb(0, 255, 72),blue);
+}
+.icons:hover .brands{
+    color: white;
+    /* animations */
+    animation: rotation 4s;
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(40deg);
+    }
+    25%{
+        transform: rotate(-40deg);
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+    75%{
+        transform: rotate(-40deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+#copyright{
+    font-size: 2rem;
+}
+#copyright{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+footer{
+    margin-top: 5%;
+}
+.uparrow{
+    float: right;
+    margin-top:-2rem;
+    margin-right: 45px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: antiquewhite;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
+}
